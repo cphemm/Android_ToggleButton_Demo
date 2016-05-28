@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.carolynhemmings.togglebutton.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#2e548a">
+
+    <ToggleButton
+        android:text="@string/toggle_title"
+        android:id="@+id/toggleButtonId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:checked="false"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/title"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/showTextView"
+        android:visibility="gone"
+        android:text="@string/show_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/toggleButtonId"
+        android:layout_alignLeft="@+id/toggleButtonId"
+        android:layout_alignStart="@+id/toggleButtonId"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
